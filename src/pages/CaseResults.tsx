@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
@@ -511,8 +510,7 @@ const CaseResults = () => {
                         </div>
                         <Progress 
                           value={100 / (caseAnalysis.summary.duration / parseInt(alt.timeframe.split('-')[1]))} 
-                          className="h-2" 
-                          indicatorClassName="bg-green-500"
+                          className="h-2 bg-green-100"
                         />
                       </div>
                     </div>
