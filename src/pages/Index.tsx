@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { ArrowRight, BarChart } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const Index = () => {
   // Sample data for live case predictions
@@ -171,3 +172,4 @@ const Index = () => {
 };
 
 export default Index;
+
