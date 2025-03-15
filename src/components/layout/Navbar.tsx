@@ -33,10 +33,9 @@ const Navbar = () => {
   }, [location.pathname]);
 
   const navItems = [
-    { name: "Home", path: "/" },
-    { name: "Analyze Your Case", path: "/analyze-case" },
     { name: "How It Works", path: "/how-it-works" },
-    { name: "About", path: "/about" },
+    { name: "Case Studies", path: "/case-studies" },
+    { name: "Legal Insights", path: "/legal-insights" },
   ];
 
   return (
@@ -44,7 +43,7 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-white/80 backdrop-blur-md shadow-sm"
+          ? "bg-white/90 backdrop-blur-md shadow-sm"
           : "bg-transparent"
       )}
     >
@@ -56,14 +55,12 @@ const Navbar = () => {
               className="flex items-center space-x-2 text-lg font-medium transition-colors"
             >
               <Scale className="h-6 w-6 text-primary" />
-              <span className="hidden md:inline-block font-semibold">
-                JurisPredictor 360
-              </span>
+              <span className="font-semibold">NyayaPredict</span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -81,8 +78,8 @@ const Navbar = () => {
                 )}
               </Link>
             ))}
-            <Button className="ml-4" size="sm">
-              Login
+            <Button size="sm" className="bg-primary hover:bg-primary/90">
+              Get Started
             </Button>
           </nav>
 
@@ -120,7 +117,7 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button className="mt-2 w-full">Login</Button>
+              <Button className="mt-2 w-full bg-primary hover:bg-primary/90">Get Started</Button>
             </nav>
           </div>
         </div>

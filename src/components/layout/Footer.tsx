@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
               <Scale className="h-6 w-6 text-primary" />
-              <span className="text-lg font-semibold">JurisPredictor 360</span>
+              <span className="text-lg font-semibold">NyayaPredict</span>
             </Link>
             <p className="text-sm text-legal-600">
               AI-powered legal case prediction platform for the Indian judicial system,
@@ -27,13 +27,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/legal-resources" className="text-sm text-legal-600 hover:text-primary transition-colors">
-                  Legal Resources
+                <Link to="/legal-insights" className="text-sm text-legal-600 hover:text-primary transition-colors">
+                  Legal Insights
                 </Link>
               </li>
               <li>
-                <Link to="/expert-network" className="text-sm text-legal-600 hover:text-primary transition-colors">
-                  Expert Network
+                <Link to="/case-studies" className="text-sm text-legal-600 hover:text-primary transition-colors">
+                  Case Studies
                 </Link>
               </li>
             </ul>
@@ -70,7 +70,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <Mail className="h-5 w-5 text-legal-400" />
-                <span className="text-sm text-legal-600">support@jurispredictor.com</span>
+                <span className="text-sm text-legal-600">support@nyayapredict.com</span>
               </li>
               <li className="flex items-start space-x-3">
                 <Phone className="h-5 w-5 text-legal-400" />
@@ -88,7 +88,7 @@ const Footer = () => {
 
         <div className="border-t border-legal-100 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs text-legal-500 mb-4 md:mb-0">
-            © {new Date().getFullYear()} JurisPredictor 360. All rights reserved.
+            © {new Date().getFullYear()} NyayaPredict. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-legal-400 hover:text-primary transition-colors">
